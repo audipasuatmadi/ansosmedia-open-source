@@ -1,0 +1,430 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0px;
+	text-align: center;
+}
+
+#programTitle {
+	margin-top: 100px;
+	display: inline;
+}
+
+#programTitle h1 {
+	font-weight: bold;
+	font-size: 3em;
+	font-family: Acme;
+	margin-bottom: 0px;
+}
+
+#programTitle h3 {
+	margin-top: -10px;
+}
+
+#programTitle span {
+	color: red;
+}
+
+.formSection {
+	border-radius: 5px;
+	border: solid .5px #a9a9a9;
+	margin-bottom: 50px;
+	display: inline-block;
+	padding: 5%;
+	text-align: center;
+	margin-top: 2vh;
+
+	transition: box-shadow .5s;
+}
+
+.formSection:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.formSection form {
+	text-align: center;
+}
+
+.formSection input, .formSection button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	background-color: unset;
+	border: solid .5px #24d677;
+	border-radius: 2px;
+	padding: 10px;
+	outline: none;
+	font-size: 1em;
+}
+
+.formSection p {
+	color: red;
+}
+
+.formSection button {
+	margin-top: 9px;
+	color: #24d677;
+	transition: background-color .5s, color .5s;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.formSection button:hover {
+	background-color: #24d677;
+	color: #fff;
+}
+
+
+#loginForm {
+}
+
+#signupForm {
+	display: none;
+}
+
+#signupForm {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+p.signupUp {
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 1em;
+	margin-top: 0px;
+}
+
+
+/* INDEX FILE */
+
+header #actualHeader {
+	background-color: #fff;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+header img {
+	max-width: 35px;
+	max-height: auto;
+	margin-left: 20px;
+}
+
+
+
+#hamburgermenu img, #hamburgermenu p {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#hamburgermenu img {
+	transition: margin-left 1s;
+}
+
+#hamburgermenu img.onSidebar {
+	margin-left: 22vw;
+}
+
+#hamburgermenu p {
+	position: relative;
+	margin-left: 10px;
+	transform: translateY(14px);
+}
+
+body#indexBody {
+	background-color: #eee;
+}
+
+/* Brand */
+
+#brand {
+	text-align: center;
+}
+
+/* forms container */
+#formscontainer  {
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 100px;
+}
+#formscontainer button {
+	background-color: unset;
+
+	border: solid .5px;
+	border-radius: 1px;
+	
+	cursor: pointer;
+	padding: 15px 30px;
+	transition: background-color .5s, color .5s;
+}
+
+#formscontainer button:hover {
+	background-color: #2e2e2e;
+	color: #fff;
+}
+
+.eleh {
+	margin-top: 100vh;
+}
+
+/* SIDEBAR */
+
+
+#sidebar {
+	display: inline-block;
+	height: 100vh;
+	width: 20vw;
+	position: fixed;
+	left: 0%;
+	background-color: #292929;
+	transition: width 1s;
+	overflow: hidden;
+}
+
+#sidebar.hide {
+	width: 0vw;
+}
+
+#sidebar .menuTitle {
+	border-bottom: solid 1px #1A1A1A; 
+}
+
+#sideBarGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+	color: #fff;
+}
+
+#sideBarGrid h3 {
+	display: block;
+	font-size: 1em;
+	white-space: nowrap;
+}
+
+
+
+
+
+
+/* EXTERNAL */
+.pageTitle {
+	background-color: #fff;
+	text-align: center;
+	font-size: .8em;
+	padding-top: 90px;
+	color: #2e2e2e;
+	font-weight: bold;
+}
+
+/* HOME CANVAS */
+#homeCanvas {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1fr;
+	grid-gap: 1em;
+	margin: 0px 5%;
+	margin-top: 20px;
+}
+
+/* HOME FEEDS */
+#homeFeeds {
+
+}
+
+#homeFeeds #post-form {
+	background-color: #fff;
+	border-radius: 2px;
+	border: solid .5px #dddfe2;
+
+	margin-top: 100px;
+	text-align: center;
+}
+
+#homeFeeds form textarea {
+	
+	margin: 0px auto;
+	display: block;
+	width: 80%;
+	height: 125px;
+	resize: none;
+	padding: 20px;
+
+	border: none;
+	border-bottom: solid .5px #dddfe2;
+	border-top: solid .5px #dddfe2;
+	outline: none;
+}
+
+#homeFeeds form button, #homeFeeds h5 {
+	background-color: unset;
+	border-radius: 2px;
+	margin: 10px 0px;
+	padding: 10px 30px;
+	color: #24d677;
+	cursor: pointer;
+
+	border: solid .5px #24d677;
+	transition: background-color .5s, color .5s;
+}
+
+#homeFeeds form button:hover, #homeFeeds h5:hover {
+	background-color: #24d677;
+	color: #fff;
+}
+
+#homeFeeds h5 {
+	display: inline;
+}
+
+#homeFeeds input {
+	display: none;
+}
+
+#postError {
+	color: red;
+	font-size: 0.8em;
+	margin-bottom: -5px;
+}
+
+#image-preview.noImage {
+	display: none;
+}
+
+#image-preview {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* Postingan */
+
+.post {
+	background-color: #fff;
+	margin: 10px 0;
+	border-radius: 2px;
+	border: solid .5px #dddfe2;
+}
+
+.post form {
+	margin-top: 0px;
+	border-top: solid .5px #dddfe2;
+
+}
+
+.profile-container {
+	text-align: left;
+	padding-left: 30px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.text-container {
+	text-align: left;
+	padding: 30px;
+	padding-top: 0px;
+	margin-top: -20px;
+	margin-bottom: 0px;
+}
+
+.image-container.noimg {
+	display: none;
+}
+
+.image-container {
+	width: 100%;
+	overflow: hidden;
+
+	background-position: center;
+	background-size: cover;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+}
+
+.kembali-button {
+		display: none;
+	}
+
+@media only screen and (max-width: 900px) {
+
+	#brand {
+		font-size: .5em;
+		display: flex;
+		align-items: center;
+	}
+
+	#hamburgermenu {
+		display: flex;
+		align-items: center;
+	}
+
+	#hamburgermenu p {
+		display: none;
+	}
+
+	#hamburgermenu img {
+		width: 30px;
+	}
+
+	#formscontainer {
+		margin-right: 10px;
+	}
+
+	#formscontainer button {
+		padding: 7.5px 15px;
+	}
+
+	#homeCanvas {
+		grid-template-columns: 0fr 1fr 0fr;
+		grid-gap: 0px;
+
+		margin: 0px 0px;
+	}
+
+	#homeFeeds form {
+		margin-top: 0px;
+	}
+
+	.post {
+		margin: 20px 0;
+		font-size: .8em;
+		border-radius: 0px;
+		border: unset;
+		border-bottom: border: solid .5px #dddfe2;
+		border-top: border: solid .5px #dddfe2;
+	}
+
+	#sidebar {
+		width: 100vw;
+		transition: unset;
+	}
+
+	#sideBarGrid h3 {
+		font-size: .9em;
+	}
+
+	.kembali-button {
+		margin-top: 65vh;
+		display: block;
+	}
+
+
+}

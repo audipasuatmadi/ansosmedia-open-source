@@ -1,0 +1,40 @@
+<header>
+	<div id="actualHeader">
+		<div id="hamburgermenu">
+			<img src="./assets/Icon_HamburgerTab.png" onclick="getSideBar()">
+			<p onclick="getSideBar()">MENU</p>
+		</div>
+		<div id="brand">
+			<h1>ANSOSMEDIA</h1>
+		</div>
+		<div id="formscontainer">
+			<div>
+				<?php
+					if (isset($_SESSION['userid'])) {
+						echo '<form action="./logout.php" method="POST"><button>Logout</button></form>';
+					}
+					else {
+						echo '<form action="./login.php" method="POST"><button>Masuk/Daftar</button></form>';
+					}
+				?>
+			</div>
+		</div>
+	</div>
+
+	<div id="sidebar" class="hide">
+		<div id="sideBarGrid">
+			<div class="menuTitle">
+				<h2>MENU</h2>
+			</div>
+
+			<?php
+				echo "anjing";
+			?>
+			<div class="Profil Saya">
+				
+			</div>
+
+		</div>
+	</div>
+
+</header>
